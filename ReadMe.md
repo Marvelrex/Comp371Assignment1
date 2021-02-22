@@ -1,50 +1,41 @@
-# COMP 371 Quiz 1
+# COMP 371 Project Team 15
 To run this program, navigate to Comp371-w21-15/ src and open a A1.cpp.
 
-Name_ID
+Name_ID_Model
 
-* Jialin Yang_40069006
+* Jialin Yang_40069006_JN46
+* ZuhaadbinAabid_40085293_ZD43
+* YeeHo Chow_40032218_YC48
+* ShiXuanDeng_40057454_SN44
+* Nick Léveillée_40130986_NK46
 
-Quiz I
+Project Part I
 
-* Rendered Models, 128*128 grid, x-y-z axis in 3D space.
+* Render 5 Models, 128*128 grid, x-y-z axis in 3D space.
 * Operation can be done by keyboard and mouse.
 * Focused on Matrix transformation, Hierarchy Models, Camera , Input Handle.
 
 
 You can See:
 
-* Eight different colors models are to be placed vertically on postive Z axis direction grid border with x=0, y=0;
+* Four models are to be placed on quarter arcs of a circle touching the imaginary edges of the grid and one model facing along the x-axis as required. 
 * 128*128 girds in yellow color.
-* RGB xyz cylinder axes located at origin.
+* RGB xyz axes located at origin.
 
-Brief Description:
-* User can use 1-8 to bind each model, and camera will be put in front of model. When model is binded
-* User can move(by UP DOWN LEFT RIGHT ARROW KEY) rotate(SHIFT + A/D) zoom(U and J). 
-* Changed render type by T(GL_TRIANGLES), L(GL_LINES),P(GL_POINTS)
-* Additionlly
-* I added two new function.
-* 1.User can press I to toggle on groupModel, the whole model can move, rotate, and zoom together.
-* 2.If user bind to one model, user can press O to make model rotate around origin and press Y || bind other model to stop it.
-* 3.To be more interesting, I added two U models to model's left and right side. User can rotate them around the model tower, move and scale(Same operation as other model).
-*/
 
 ### Operation
 
 Project1 used keyboard and mouse as input:
 
-* [1] Bind model 1 Y and activated. 
-* [2] Bind model 2 A and activated. 
-* [3] Bind model 3 N and activated. 
-* [4] Bind model 4 G and activated. 
-* [5] Bind model 5 J and activated. 
-* [6] Bind model 6 I and activated. 
-* [7] Bind model 7 U and activated. 
-* [8] Bind model 8 U and activated. 
-* [W] - Move binded model away from the camera.
-* [A] - Move binded model close to the camera.
-* [S] - Move binded model to the left side of camera.
-* [D] - Move binded model to the right side of camera.
+* [1] Bind model 1 and activated. Camera position in the center showing Zuhaad bin Aabid (40085293) letters and digits model.(Activated means you can do the operations to the model)
+* [2] Bind model 2 and activated. Camera position in the right side showing Shi Xuan Deng (40057454) letters and digits model.
+* [3] Bind model 3 and activated. Camera position in the bottom side showing YeeHo Chow (40032218) letters and digits model.
+* [4] Bind model 4 and activated. Camera position in the left side showing Nick Léveillée (40130986) letters and digits model.
+* [5] Bind model 5 and activated. Camera position in the top side showing Jialin Yang(40069006) letters and digits model.
+* [W] - Move model to the positive x-axis.
+* [A] - Move model to the negative z-axis.
+* [S] - Move model to the negative x-axis.
+* [D] - Move model to the positive z-axis.
 * [W][A] Model moves diagonaly top left.
 * [W][D] Model moves diagonaly top right.
 * [S][A] Model moves diagonaly bottom left.
@@ -56,18 +47,18 @@ Project1 used keyboard and mouse as input:
 * [T] - Change render type to GL_TRIANGLES
 * [L] - Change render type to GL_LINE_LOOP
 * [P] - Change render type to GL_POINTS
-* [I] - Choose the whole model as a object and do operations, such as move rotation and scale
-* [O] - Let binded model rotate around origin.
-* [Y] - Stop rotating around origin.
-* [UP ARROW] Fps-like Move Forward
-* [DOWN ARROW] Fps-like Move Backward
-* [LEFT ARROW] Fps-like Move to the left
-* [RIGHT ARROW] Fps-like Move to the right
-
+* [UP ARROW] Anti-clockwise rotation about positive y axis.
+* [DOWN ARROW] Anti-clockwise rotation about negative y axis.
+* [LEFT ARROW] Anti-clockwise rotation about positive x axis.
+* [RIGHT ARROW] Anti-clockwise rotation about negative x axis.
+* [Mouse Left Button] Use mouse movement to move into/out of the scene
+* [Mouse Middle Button] Use mouse movement in the y direction to tilt.
+* [Mouse Right Button] Use mouse movement in the x direction to pan
 * [Home] Reset all model and world to inital setting.
 
 
 
 ### Todos
 
- - Quiz 2...
+ - Project2 Lighting and Texture Mapping
+ - Project3 Animation
